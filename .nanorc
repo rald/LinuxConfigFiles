@@ -2,4 +2,5 @@ set tabsize 2
 set autoindent
 set mouse
 set smarthome
+set tabstospaces
 
