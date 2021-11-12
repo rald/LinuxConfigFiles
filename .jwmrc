@@ -3,7 +3,10 @@
 
     <!-- The root menu. -->
     <RootMenu onroot="12">
-        <Program icon="terminal.png" label="Terminal">xterm</Program>
+        <Program label="Terminal">xterm</Program>
+        <Program label="Gimp">gimp</Program>
+        <Program label="MTPaint">mtpaint</Program>
+        <Program label="Logisim">exec java -jar $HOME/x/logisim/logisim-2.0.0.jar</Program>
         <Separator/>
         <Restart label="Restart" icon="restart.png"/>
         <Exit label="Exit" confirm="true" icon="quit.png"/>
@@ -25,11 +28,11 @@
     <Group>
         <Name>xclock</Name>
         <Option>drag</Option>
-        <Option>notitle</Option>
-    </Group>
+/        <Option>notitle</Option>
+ /   </Group>
 
     <!-- Tray at the bottom. -->
-    <Tray x="0" y="-1" height="25" autohide="off">
+    <Tray x="0" y="-1" height="40" autohide="off">
 
         <TrayButton label="+">root:1</TrayButton>
         <Spacer width="2"/>
@@ -41,47 +44,48 @@
         <TaskList maxwidth="256"/>
 
         <Dock/>
+      
         <Clock format="%l:%M %p"><Button mask="123">exec:xclock</Button></Clock>
 
     </Tray>
 
     <!-- Visual Styles -->
     <WindowStyle>
-        <Font>Sans-9:bold</Font>
+        <Font>Sans-16:bold</Font>
         <Width>4</Width>
-        <Height>21</Height>
-        <Corner>3</Corner>
+        <Height>40</Height>
+        <Corner>6</Corner>
         <Foreground>#FFFFFF</Foreground>
-        <Background>#555555</Background>
-        <Outline>#000000</Outline>
+        <Background>#505050</Background>
+        <Outline>#808080</Outline>
         <Opacity>0.5</Opacity>
         <Active>
             <Foreground>#FFFFFF</Foreground>
-            <Background>#0077CC</Background>
-            <Outline>#000000</Outline>
+            <Background>#000000</Background>
+            <Outline>#808080</Outline>
             <Opacity>1.0</Opacity>
         </Active>
     </WindowStyle>
     <TrayStyle group="true" list="all">
-        <Font>Sans-9</Font>
-        <Background>#333333</Background>
+        <Font>Sans-16</Font>
+        <Background>#000000</Background>
         <Foreground>#FFFFFF</Foreground>
-        <Outline>#000000</Outline>
+        <Outline>#808080</Outline>
         <Opacity>0.75</Opacity>
     </TrayStyle>
     <TaskListStyle>
-      <Font>Sans-9</Font>
+      <Font>Sans-16</Font>
       <Active>
         <Foreground>#FFFFFF</Foreground>
-        <Background>#555555</Background>
+        <Background>#505050</Background>
       </Active>
       <Foreground>#FFFFFF</Foreground>
-      <Background>#333333</Background>
+      <Background>#808080</Background>
     </TaskListStyle>
     <PagerStyle>
-        <Outline>#000000</Outline>
-        <Foreground>#555555</Foreground>
-        <Background>#333333</Background>
+        <Outline>#808080</Outline>
+        <Foreground>#505050</Foreground>
+        <Background>#000000</Background>
         <Text>#FFFFFF</Text>
         <Active>
             <Foreground>#0077CC</Foreground>
@@ -89,20 +93,20 @@
         </Active>
     </PagerStyle>
     <MenuStyle>
-        <Font>Sans-9</Font>
+        <Font>Sans-16</Font>
         <Foreground>#FFFFFF</Foreground>
-        <Background>#333333</Background>
-        <Outline>#000000</Outline>
+        <Background>#000000</Background>
+        <Outline>#808080</Outline>
         <Active>
             <Foreground>#FFFFFF</Foreground>
-            <Background>#0077CC</Background>
+            <Background>#505050</Background>
         </Active>
         <Opacity>0.85</Opacity>
     </MenuStyle>
     <PopupStyle>
-        <Font>Sans-9</Font>
-        <Foreground>#000000</Foreground>
-        <Background>#999999</Background>
+        <Font>Sans-16</Font>
+        <Foreground>#FFFFFF</Foreground>
+        <Background>#505050</Background>
     </PopupStyle>
 
     <!-- Path where icons can be found.
@@ -166,7 +170,7 @@
               contained within a Desktop tag to give a specific background
               for that desktop.
          -->
-        <Background type="solid">#111111</Background>
+        <Background type="solid">#505050</Background>
     </Desktops>
 
     <!-- Double click speed (in milliseconds) -->
@@ -199,15 +203,15 @@
     <Key key="Return">select</Key>
     <Key key="Escape">escape</Key>
 
-    <Key mask="A" key="Tab">nextstacked</Key>
-    <Key mask="A" key="F4">close</Key>
+    <Key mask="A" key="Up">nextstacked</Key>
+    <Key mask="A" key="Down">prevstacked</Key>
+    <Key mask="A" key="6">close</Key>
     <Key mask="A" key="#">desktop#</Key>
-    <Key mask="A" key="F1">root:1</Key>
-    <Key mask="A" key="F2">window</Key>
-    <Key mask="A" key="F10">maximize</Key>
+    <Key mask="A" key="7">root:1</Key>
+    <Key mask="A" key="8">window</Key>
+    <Key mask="A" key="0">minimize</Key>
+    <Key mask="A" key="9">maximize</Key>
     <Key mask="A" key="Right">rdesktop</Key>
     <Key mask="A" key="Left">ldesktop</Key>
-    <Key mask="A" key="Up">udesktop</Key>
-    <Key mask="A" key="Down">ddesktop</Key>
 
 </JWM>
