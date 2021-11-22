@@ -2,11 +2,11 @@
 <JWM>
 
     <!-- The root menu. -->
-    <RootMenu onroot="12">
-        <Program label="Terminal">xterm</Program>
-        <Program label="Gimp">gimp</Program>
-        <Program label="MTPaint">mtpaint</Program>
-        <Program label="Logisim">exec java -jar $HOME/x/logisim/logisim-2.0.0.jar</Program>
+    <RootMenu onroot="13">
+        <Program label="xterm">xterm</Program>
+        <Program label="xfwrite">xfwrite</Program>
+        <Program label="xfe">xfe</Program>
+        <Program label="logisim">java -jar $HOME/x/logisim/logisim-2.0.0.jar</Program>
         <Separator/>
         <Restart label="Restart" icon="restart.png"/>
         <Exit label="Exit" confirm="true" icon="quit.png"/>
@@ -28,8 +28,8 @@
     <Group>
         <Name>xclock</Name>
         <Option>drag</Option>
-/        <Option>notitle</Option>
- /   </Group>
+        <Option>notitle</Option>
+    </Group>
 
     <!-- Tray at the bottom. -->
     <Tray x="0" y="-1" height="40" autohide="off">
@@ -206,11 +206,10 @@
     <Key mask="A" key="Up">nextstacked</Key>
     <Key mask="A" key="Down">prevstacked</Key>
     <Key mask="A" key="6">close</Key>
-    <Key mask="A" key="#">desktop#</Key>
-    <Key mask="A" key="7">root:1</Key>
-    <Key mask="A" key="8">window</Key>
-    <Key mask="A" key="0">minimize</Key>
+    <Key mask="A" key="7">window</Key>
+    <Key mask="A" key="8">root:1</Key>
     <Key mask="A" key="9">maximize</Key>
+    <Key mask="A" key="0">minimize</Key>
     <Key mask="A" key="Right">rdesktop</Key>
     <Key mask="A" key="Left">ldesktop</Key>
 
