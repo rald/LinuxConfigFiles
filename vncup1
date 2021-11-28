@@ -1,2 +1,2 @@
 #x11vnc  -cursor some -xkb -noxrecord -noxfixes -noxdamage -display :1 -nopw -wait 5 -shared -permitfiletransfer -tightfilexfer -noshm &
-x11vnc  -quiet -cursor arrow -xkb -noxrecord -noxfixes -noxdamage -display :1 -nopw -forever -localhost -noshm -rfbport 5901 -skip_keycodes 187,188 &
+x11vnc  -quiet -cursor arrow -xkb -noxrecord -noxfixes -noxdamage -display :1 -nopw -forever -localhost -noshm -rfbport 5901 -skip_keycodes 187,188,94 -debug_keyboard &

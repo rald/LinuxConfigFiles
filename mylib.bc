@@ -1,0 +1,11 @@
+scale=4
+
+define f(x) {
+    if(x<=1) return(1)
+    return(x*f(x-1))
+}
+
+define p(x,y) {
+    x+=x*y
+    return(x)
+}
