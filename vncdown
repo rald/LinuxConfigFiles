@@ -1,0 +1,5 @@
+vncserver -kill :1
+pkill jwm
+pkill Xvfb
+pkill x11vnc
+

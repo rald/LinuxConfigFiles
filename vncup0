@@ -1,0 +1,2 @@
+Xvfb :1 -screen 0 768x1024x24 &
+jwm &
